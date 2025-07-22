@@ -1,0 +1,53 @@
+The range() function:
+If you need to iterate over a sequence of numbers, the built-in function range() comes in handy.
+It generates arithmetic progressions.
+
+Example:
+for i in range(5):
+    print(i)
+
+This prints numbers from 0 to 4.
+
+The enumerate() function:
+The enumerate() function adds a counter to an iterable and returns it as an enumerate object.
+
+Example:
+my_list = ['apple', 'banana', 'cherry']
+for index, value in enumerate(my_list):
+    print(index, value)
+
+This prints:
+0 apple
+1 banana
+2 cherry
+
+List Comprehension:
+List comprehensions provide a concise way to create lists.
+
+Example:
+squares = [x**2 for x in range(5)]
+print(squares)
+
+This prints: [0, 1, 4, 9, 16]
+
+The len() function:
+The len() function returns the number of items in an object.
+
+Example:
+my_list = [10, 20, 30]
+print(len(my_list))
+
+This prints: 3
+
+The zip() function:
+The zip() function combines two or more iterables into a single iterable of tuples.
+
+Example:
+names = ['Alice', 'Bob']
+scores = [90, 85]
+for name, score in zip(names, scores):
+    print(name, score)
+
+This prints:
+Alice 90
+Bob 85
